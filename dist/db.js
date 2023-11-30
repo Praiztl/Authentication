@@ -15,9 +15,7 @@ var connectDB = /*#__PURE__*/function () {
           _context.next = 3;
           return mongoose.connect(process.env.MONGODB_URL, {
             useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useCreateIndex: true,
-            useFindAndModify: false
+            useUnifiedTopology: true
           });
         case 3:
           console.log('Connected to MongoDB');

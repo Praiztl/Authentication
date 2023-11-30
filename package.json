@@ -8,7 +8,7 @@
     "build": "babel ./src --presets @babel/preset-env --out-dir dist",
     "gitpush": "git add . && git commit -m 'latest' && git push origin master",
     "postinstall": "npm run build",
-    "test": "mocha --require @babel/register ./bin/**/*.www.js"
+    "test": "mocha --require @babel/register ./bin/www.js"
   },
   "dependencies": {
     "@babel/cli": "^7.16.8",
